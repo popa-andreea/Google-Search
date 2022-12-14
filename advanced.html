@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="navbar" class="d-flex justify-content-between">
+            <a href="index.html"> <img src="google.svg.png" alt="Logo" width="80" style="margin-left: 15px;"> </a>
+            
+            <div>
+                <i class="grid-icon bi bi-grid-3x3-gap-fill"></i>
+                <button class="log-in btn btn-primary" onclick="window.location.href='https://accounts.google.com/'"> Log in </button> 
+            </div> 
+        </div>
+        
+        <p id="title"> Advanced Search </p>
+
+        <div id="border" style="border-bottom: 1px solid #e6e6e6;"> </div>
+        
+        <form action="https://google.com/search" id="advanced-search-form">
+
+            <p id="grid-item1">Find pages with...</p>
+
+            <label for="as_q">all these words:</label>
+            <input type="text" name="as_q" class="form-control">      
+
+            <label for="as_epq">this exact word or phrase:</label>
+            <input type="text" name="as_epq" class="form-control">   
+
+            <label for="as_oq">any of these words:</label>
+            <input type="text" name="as_oq" class="form-control">
+            
+            <label for="as_eq">none of these words:</label>
+            <input type="text" name="as_eq" class="form-control"> 
+
+            <input type="submit" value="Advanced Search" id="grid-item2" class="btn btn-primary">
+        </form>
+
+        <div id="advanced-footer" class="footer p-3 bg-light">
+            <a href="https://support.google.com/websearch/?p=ws_results_help&fg=1"> Help </a>
+            <a href="https://policies.google.com/privacy?&fg=1"> Privacy </a>
+            <a href="https://policies.google.com/terms?&fg=1"> Terms </a>
+        </div>
+    </body>
+</html>
